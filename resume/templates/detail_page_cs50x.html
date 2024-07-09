@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرک رسمی دانشگاه هاروارد</title>
+    <style>
+        /* تصویر رسپانسیو */
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* این خط کد برای حفظ محل تصویر درون تگ <img> ضروری است */
+            margin: auto; /* برای مرکز چین کردن تصویر */
+        }
+    </style>
+</head>
+<body>
+    <img src="{% static 'images/CS50x.png' %}" alt="مدرک CS50x از دانشگاه هاروارد" class="responsive-img">
+</body>
+</html>

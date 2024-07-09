@@ -1,0 +1,332 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهدیار شمسی </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     
+
+          
+
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/stylee.css' %}">
+  
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+{% comment %} <header>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#about">درباره من</a>
+        <a href="#services">خدمات من</a>
+        <a href="#portfolio">گواهی ها </a>
+        <a href="#blogs">وبلاگ</a>
+        <a href="#contact">تماس با من</a>
+    </nav>
+    
+</header> {% endcomment %}
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <img class="tilt" src="{% static 'images/mahdiyar1.JPEG' %}">
+        <h3>مهدیار   <span>شمسی</span> </h3>
+        <p> i am a <span class="typing-text"> Python Developer </span> </p>
+        <a href="#about" class="btn">درباره من</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> درباره <span>من</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="{% static 'images/mahdiyarsh1.JPG' %}">
+        </div>
+
+        <div class="content">
+    <h3>من <span>مهدیار شمسی</span> هستم</h3>
+    <p class="info">
+        متولد شهریور ۱۳۷۹ در تهران، دارای دیپلم ریاضی از دبیرستان قلم مهر و مدرک کارشناسی مهندسی کامپیوتر با گرایش نرم‌افزار از دانشگاه پیام نور واحد تهران شمال.
+    </p>
+    <h4 style="font-size: 1.4em;">مهارت‌ها:</h4>
+<ul style="font-size: 1.4em;">
+    <li>برنامه‌نویسی: مهارت پیشرفته در زبان برنامه‌نویسی پایتون و فریمورک جنگو (Back-end) و همچنین دیتابیس.</li>
+    <li>توسعه نرم‌افزار: تجربه در توسعه نرم‌افزار و پیاده‌سازی سیستم‌های تحت وب مختلف.</li>
+    <li>دوره‌های تخصصی: گذراندن چندین دوره فنی و تخصصی در آموزشگاه‌های معتبر کشور.</li>
+</ul>
+<h4 style="font-size: 1.4em;">تجربیات حرفه‌ای:</h4>
+<ul style="font-size: 1.4em;">
+    <li>توسعه‌دهنده نرم‌افزار: فعالیت در حوزه توسعه نرم‌افزار و برنامه‌نویسی با تمرکز بر بهبود و گسترش دانش در این زمینه.</li>
+    <li>پروژه‌های مختلف: مشارکت فعال در پروژه‌های متعدد و ایفای نقش مهم به عنوان توسعه‌دهنده نرم‌افزار.</li>
+</ul>
+<h4 style="font-size: 1.4em;">علایق حرفه‌ای:</h4>
+<ul style="font-size: 1.4em;">
+    <li>علاقه مند به رشد فردی و افزایش تجربیات و کار تیمی.</li>
+</ul>
+    
+    
+    <div class="box-container">
+        <div class="box">
+            <p><span>سن:</span> 24</p>
+            <p><span>جنسیت:</span> مرد</p>
+            <p><span>تجربه:</span> 2 سال</p>
+            <p><span>فریلنسر:</span> آزاد</p>
+        </div>
+        <div class="box">
+            <p><span>زبان:</span> ایرانی / انگلیسی</p>
+            <p><span>تلفن:</span> 09026428707</p>
+            <p><span>ایمیل:</span> <a href="mailto:mahdiyarshamsi64@gmail.com" class="email-link">mahdiyarshamsi64@gmail.com</a></p>
+
+            <p><span>آدرس:</span> ایران، تهران</p>
+        </div>
+    </div>
+    
+    <a href="{% url 'resume:download_resume' %}" class="btn" download>دانلود رزومه</a>
+
+</div>
+
+
+    </div>
+            
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> <span> خدمات </span> من </h1>
+
+    <div class="box-container">
+
+        <div class="box tilt">
+            <i class="fas fa-code"></i>
+            <h3>برنامه نویسی پایتون</h3>
+            <p>برنامه نویسی پایتون را حدود 2 سال به صورت مستمر از مرحله مقدماتی تا پیشرفته کار کرده و پروژه های متعددی توسعه داده شده است.</p>
+        </div>
+
+        {% comment %} <div class="box tilt">
+            <i class="fas fa-paint-brush"></i>
+            <h3>طراحی سایت</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
+        </div> {% endcomment %}
+        <div class="box tilt">
+            <i class="fas fa-code"></i>
+            <h3>برنامه نویسی جنگو</h3>
+            <p>فریم ورک جنگو را در محیط آموزشی با تکمیل کردن پروژه های تحت وب یاد گرفته و توسعه داده شده.</p>
+        </div>
+        <div class="box tilt">
+            <i class="fas fa-database"></i>
+            <h3> دیتابیس</h3>
+            <p>دیتابیس های مختلفی را کارکرده و با توجه به نیاز های پروژه طراحی و پیاده سازی شده است.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-envelope"></i>
+            <h3>توسعه نرم افزار تحت وب</h3>
+            <p>چندین پروژه تحت وب با استفاده از پایتون  / جنگو و دیتابیس توسعه داده شده که در تجربه و رشد فردی بسیار کمک کننده بوده و باعث گسترش یادگیری در این حوزه بوده است .</p>
+        </div>
+
+        
+
+        
+    </div>
+
+</section>
+
+
+<!-- services section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> <span> گواهی </span> ها</h1>
+
+    <div class="box-container">
+    <div class="box tilt">
+        <img src="{% static 'images/bamdad.jpg' %}" alt="Bamdad">
+        <div class="content">
+            <a href="{% url 'resume:bamdad' %}" class="btn">کلیک کنید</a>
+            <h1>مدرک رسمی دوره جامع پایتون آموزشگاه بامداد</h1>
+        </div>
+    </div>
+
+    <div class="box tilt">
+        <img src="{% static 'images/CS50x.png' %}" alt="CS50x">
+        <div class="content">
+            <a href="{% url 'resume:cs50' %}" class="btn">کلیک کنید</a>
+            <h1>مدرک رسمی برنامه‌نویسی و علوم کاپیوتر دانشگاه هاروارد</h1>
+        </div>
+    </div>
+
+    <div class="box tilt">
+        <img src="{% static 'images/cando.JPG' %}" alt="Cando">
+        <div class="content">
+            <a href="{% url 'resume:cando' %}" class="btn">کلیک کنید</a>
+            <h1>مدرک رسمی دوره فلوچارت و فاندامنتال آمورشگاه کندو<h1/>
+        </div>
+    </div>
+</div>
+
+    
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span> وبلاگ </span> من </h1>
+
+    <div class="box-container">
+        
+        <div class="box tilt">
+            <img src="images/blog-img-1.jpg" alt="">
+            <h3> عنوان وبلاگ اینجا قرار میگیرد </h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+            <a href="#" class="btn">بیشتر بدانید</a>
+        </div>
+
+        <div class="box tilt">
+            <img src="images/blog-img-2.jpg" alt="">
+            <h3> عنوان وبلاگ اینجا قرار میگیرد </h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+            <a href="#" class="btn">بیشتر بدانید</a>
+        </div>
+
+        <div class="box tilt">
+            <img src="images/blog-img-3.jpg" alt="">
+            <h3> عنوان وبلاگ اینجا قرار میگیرد </h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+            <a href="#" class="btn">بیشتر بدانید</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> تماس با <span> من </span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="{% static "images/contact-img.svg" %}" alt="phone picture">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="اسم">
+                <input type="email" id="email" placeholder="ایمیل">
+            </div>
+
+            <input type="text" id="subject" placeholder="عنوان" class="box">
+
+            <textarea placeholder="متن پیام" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="btn" value="ارسال پیام">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<div class="footer"> طراحی توسط <span><a href="https://mahdiyarshamsi.ir" target="_blank">مهدیار شمسی</a></span> | کلیه حقوق محفوظ است </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+
+<!-- typed.js link  -->
+<script src="{%static 'js/typed.min.js'%}"></script>
+{% comment %} https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js {% endcomment %}
+<!-- particles.js links  -->
+<script src="{% static 'js/particles.min.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+
+<!-- vanilla-tilt.js link  -->
+<script src="{%static 'js/vanilla-tilt.min.js'%}"></script>
+{% comment %} https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js {% endcomment %}
+<script>
+
+{% comment %} let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+}; {% endcomment %}
+
+var typed = new Typed('.typing-text', {
+    strings : ['Back End developer', 'web designer', 'Database Manager', 'Django developer'],
+    loop : true,
+    typeSpeed : 150
+});
+
+VanillaTilt.init(document.querySelectorAll('.tilt'),{
+    max:25
+});
+
+</script>
+
+</body>
+</html>
